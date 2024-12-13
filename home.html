@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DietMate</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+        }
+
+        #container {
+            height: 100vh;
+            width: 100%;
+            background-image: url("https://ik.imagekit.io/bst0i7mum/background.jpg?updatedAt=1694506682690");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #desc {
+            position: absolute;
+            top: 50%;
+            left: 32%;
+            transform: translate(-50%, -50%);
+            background-color: #dadada;
+            border-radius: 10px;
+            color: black;
+            width: 50%;
+            padding: 50px;
+            height: 85vh;
+        }
+
+
+        #desc p {
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 500;
+            opacity: 0.7;
+            margin-top:20px;
+        }
+
+        #desc a {
+            position: absolute;
+            bottom: 15px;
+            text-decoration: none;
+            /* border: 1px solid black; */
+            padding: 10px 20px;
+            color: white;
+            background-color: orange;
+            border-radius: 5px;
+        }
+        input[type="submit"]{
+        padding:9px 15px;
+        margin-top:20px;
+        border-width:1px;
+        border-radius:5px;
+        background-color:#98e077;
+        color:black;
+        }
+        .heading{
+        font-size:55px;
+        }
+        .head{
+        font-style:italic;
+        font-size:30px;
+        opacity:0.6;
+        }
+        .home-btns {
+            display:flex;
+            gap:24px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+
+        <div id="desc">
+            <h1><span class="heading">DietMate</span></br><span class="head">- Diet and Workout Recommendation</span></h1>
+
+
+            <p>
+                Welcome to the DietMate! Our platform leverages advanced AI technology to offer tailored recommendations
+                for your daily meals and workouts, all designed to help you maintain a healthy lifestyle.
+                Simply provide us with your age, gender, weight, height, dietary preferences, location, and food type, and
+                our AI-driven system will do the rest. We'll suggest nutritious breakfast and dinner options, as well as a customized workout plan to suit your needs.
+                Embark on your journey to a healthier you with our personalized recommendations. Start making positive changes to your daily routine today!
+            </p>
+        <div class="home-btns">
+            <form action="/index">
+                <input type="submit" value="Diet Recommendation">
+            </form>
+            <form action="/recipe">
+                <input type="submit" value="Recipe Generator">
+            </form>
+        </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

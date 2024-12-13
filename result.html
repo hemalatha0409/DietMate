@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Healthy Diet Recommendation System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .dietPlan {
+            background-color: #dadada;
+            padding: 25px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div style="background-color:#e08d94;">
+<div class="container" style="color:white; padding:10px; margin:0px; border-radius:15px;">
+    <h1 class="text-center">Healthy Diet Recommendation System</h1>
+    <!-- Your form code here -->
+</div>
+
+<div class="container mt-5">
+    <div class="jumbotron">
+<!--        <h1 class="display-4">Recommended Diet Plan</h1>-->
+        <h3 style="color:white;">Here is your personalized diet plan:</h3>
+        <hr class="my-4">
+        <!-- Display the diet recommendation line by line -->
+        <div class="dietPlan">
+
+        {% for line in diet_recommendation %}
+            <p>{{ line }}</p><br>
+
+        {% endfor %}
+
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
